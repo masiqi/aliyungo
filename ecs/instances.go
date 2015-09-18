@@ -2,8 +2,6 @@ package ecs
 
 import (
 	"time"
-
-	"github.com/denverdino/aliyungo/util"
 )
 
 // InstanceStatus represents instance status
@@ -195,7 +193,7 @@ type InstanceAttributesType struct {
 	InternetMaxBandwidthIn  int
 	InternetMaxBandwidthOut int
 	InternetChargeType      InternetChargeType
-	CreationTime            util.ISO6801Time //time.Time
+	CreationTime            string
 	VpcAttributes           VpcAttributesType
 	EipAddress              EipAddressAssociateType
 }
